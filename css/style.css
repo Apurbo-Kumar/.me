@@ -628,8 +628,8 @@ footer{
 .goTop{
   position: fixed;
   z-index: 999;
-  bottom: 90px;
-  right: 40px;
+  bottom: 40px;
+  left: 40px;
   width: 40px;
   height: 40px;
   background-color: #48dbfb;
