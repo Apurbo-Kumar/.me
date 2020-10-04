@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DIU TRANSPORT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+   
+
+    <link href="style/bootstrap.css" rel="stylesheet">
+
+    <link href="style/bus.css" rel="stylesheet">
+
+    <link href="style/buyticket.css" rel="stylesheet">
+
+    <link href="style/contact.css" rel="stylesheet">
+
+    <link id="theme-color-file" href="style/footer.css" rel="stylesheet">
+
+    <link href="style/main.css" rel="stylesheet">
+
+    <link href="style/nav.css" rel="stylesheet">
+
+    <link href="style/responsive.css" rel="stylesheet">
+
+    <link href="style/user.css" rel="stylesheet">
+
+    <link href="style/gallery.css" rel="stylesheet">
+    <style>
+.dropbtn {
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;width: 100%;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+</head>
+<body class="home page-template-default page page-id-122228 ">
+    
+    <div class="mobile-fixed-toolbar">
+      <ul class="top-nav-mobile-left">
+          <li style="width:36%;"><a href="https://daffodilvarsity.edu.bds"target="_blank"><img style="width:120px;" src="images/logo.png" ></a></li>
+      </ul>
+      <ul class="top-nav-mobile">
+          <li><a href="#" id="pull" class="toggle-mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <nav id="navigation" class="primary-navigation mobile-menu-wrapper" role="navigation">
+      <div id="nav-container">
+        <ul id="menu-header-menu" class="menu clearfix">
+          <li><a href="home.html" >Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="buyticket.html">Buy Ticket</a></li>
+          <li><div class="dropdown">
+              <a class="dropbtn" style="color: white;">Facilities</a>
+              <div class="dropdown-content">
+                <a href="maps.html">Locate Bus</a>
+                <a href="#">Facial Recognition</a>
+              </div>
+            </div></li>
+         <li><div class="dropdown">
+              <a class="dropbtn" style="color: white;">Info</a>
+              <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="trnasportinfo.html">Transport Info</a>
+                <a href="developers.html">Developers</a>
+              </div>
+            </div>
+            </li> 
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a>	</li>
+          <li><a href="user.html">Account</a></li>
+        </ul>		
+
+          
+        <div id="header-user-info-container" class="hidden-to-guest">
+          <span id="robi-header-logo">
+            <a href="#"> <img src="images/logo.png" ></a>
+          </span>
+        </div>		
+       
+      </div>
+    </nav>    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+   
+    <script src="js/main-slider-script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/color-settings.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/goto-btn.js"></script>
+    <script src="js/gallery.js"></script>
+
+  
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navigation").style.background = "rgb(13, 165, 216)";
+        } else {
+            document.getElementById("navigation").style.background = "transparent";
+        }
+    }
+
+    /*----------------------------------------------------
+    /* Responsive Navigation
+    /*--------------------------------------------------*/
+    jQuery(document).ready(function($){
+        $('.primary-navigation').not('.mobile-menu-wrapper').find('.menu').clone().appendTo('.mobile-menu-wrapper').hide();
+
+        $('.toggle-mobile-menu').click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('body').toggleClass('mobile-menu-active');
+        });
+        
+        // prevent propagation of scroll event to parent
+        $(document).on('DOMMouseScroll mousewheel', '.mobile-menu-wrapper', function(ev) {
+            var $this = $(this),
+                scrollTop = this.scrollTop,
+                scrollHeight = this.scrollHeight,
+                height = $this.height(),
+                delta = (ev.type == 'DOMMouseScroll' ?
+                    ev.originalEvent.detail * -40 :
+                    ev.originalEvent.wheelDelta),
+                up = delta > 0;
+        
+            var prevent = function() {
+                ev.stopPropagation();
+                ev.preventDefault();
+                ev.returnValue = false;
+                return false;
+            }
+
+            if ( $('a#pull').css('display') !== 'none' ) { // if toggle menu button is visible ( small screens )
+        
+            if (!up && -delta > scrollHeight - height - scrollTop) {
+                // Scrolling down, but this will take us past the bottom.
+                $this.scrollTop(scrollHeight);
+                return prevent();
+            } else if (up && delta > scrollTop) {
+                // Scrolling up, but this will take us past the top.
+                $this.scrollTop(0);
+                return prevent();
+            }
+            }
+        });
+    }).on('click', function(event) {
+
+        var $target = jQuery(event.target);
+        if ( ( $target.hasClass("fa") && $target.parent().hasClass("toggle-caret") ) ||  $target.hasClass("toggle-caret") ) {// allow clicking on menu toggles
+            return;
+        }
+
+        jQuery('').removeClass('mobile-menu-active');
+    });
+
+  
+ 
+    
+    </script>
+
+ 
+
+        <div style="width: 100%;height:50px ; background: rgb(6, 100, 121)">
+        </div>
+        <br><br>
+
+            <div class="auto-container">
+                <div class="row clearfix">
+                    
+                    <!--Content Side-->
+                    <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                        <!--Sec Title-->
+                        <div class="sec-title">
+                            <h2>Latest News</h2>
+                        </div>
+                        <div class="content-blocks">
+                        
+                            <!--News Block Four-->
+                            <div class="news-block-four">
+                                <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                            <div class="image">
+                                                <a href="blog-single.html"><img src="images/noid1.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box col-lg-6 col-md-6 col-sm-12">
+                                            <div class="content-inner">
+                                                <h3> NO ID NO Service</h3>
+                                                <ul class="post-meta">
+                                                    <li><span class="icon fa fa-clock-o"></span>March 03, 2017</li>
+                                                    <li><span class="icon fa fa-comment-o"></span>9</li>
+                                                    <li><span class="icon fa fa-eye"></span>7540</li>
+                                                </ul>
+                                                <div class="text">The ID card you have been issued represents your identity. Wearing ID card at all times helps the security personnel and others to ....</div>
+                                                    <a href="blog1.html" class="read-more">Read More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END News Block Four-->
+
+                              <!--News Block Four-->
+                              <div class="news-block-four">
+                                <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                            <div class="image">
+                                                <a href="blog-single.html"><img src="images/bus5.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box col-lg-6 col-md-6 col-sm-12">
+                                            <div class="content-inner">
+                                                <h3><a href="blog-single.html">Our dreams just got one step closer to universal reality</a></h3>
+                                                <ul class="post-meta">
+                                                    <li><span class="icon fa fa-clock-o"></span>March 03, 2017</li>
+                                                    <li><span class="icon fa fa-comment-o"></span>9</li>
+                                                    <li><span class="icon fa fa-eye"></span>7540</li>
+                                                </ul>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. 
+                                                    Aenean commodo ligula eget dolor. Aenean massa. Cumtipsu sociis natoque penatibus et magnis dis parturient montesti…</div>
+                                                    <a href="#" class="read-more">Read More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END News Block Four-->
+
+                              <!--News Block Four-->
+                              <div class="news-block-four">
+                                <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                            <div class="image">
+                                                <a href="blog-single.html"><img src="images/bus13.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box col-lg-6 col-md-6 col-sm-12">
+                                            <div class="content-inner">
+                                                <h3><a href="blog-single.html">Our dreams just got one step closer to universal reality</a></h3>
+                                                <ul class="post-meta">
+                                                    <li><span class="icon fa fa-clock-o"></span>March 03, 2017</li>
+                                                    <li><span class="icon fa fa-comment-o"></span>9</li>
+                                                    <li><span class="icon fa fa-eye"></span>7540</li>
+                                                </ul>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. 
+                                                    Aenean commodo ligula eget dolor. Aenean massa. Cumtipsu sociis natoque penatibus et magnis dis parturient montesti…</div>
+                                                    <a href="#" class="read-more">Read More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END News Block Four-->
+
+                              <!--News Block Four-->
+                              <div class="news-block-four">
+                                <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                            <div class="image">
+                                                <a href="blog-single.html"><img src="images/bus12.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box col-lg-6 col-md-6 col-sm-12">
+                                            <div class="content-inner">
+                                                <h3><a href="blog-single.html">Our dreams just got one step closer to universal reality</a></h3>
+                                                <ul class="post-meta">
+                                                    <li><span class="icon fa fa-clock-o"></span>March 03, 2017</li>
+                                                    <li><span class="icon fa fa-comment-o"></span>9</li>
+                                                    <li><span class="icon fa fa-eye"></span>7540</li>
+                                                </ul>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. 
+                                                    Aenean commodo ligula eget dolor. Aenean massa. Cumtipsu sociis natoque penatibus et magnis dis parturient montesti…</div>
+                                                    <a href="#" class="read-more">Read More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END News Block Four-->
+
+                              <!--News Block Four-->
+                              <div class="news-block-four">
+                                <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                                            <div class="image">
+                                                <a href="blog-single.html"><img src="images/bus7.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="content-box col-lg-6 col-md-6 col-sm-12">
+                                            <div class="content-inner">
+                                                <h3><a href="blog-single.html">Our dreams just got one step closer to universal reality</a></h3>
+                                                <ul class="post-meta">
+                                                    <li><span class="icon fa fa-clock-o"></span>March 03, 2017</li>
+                                                    <li><span class="icon fa fa-comment-o"></span>9</li>
+                                                    <li><span class="icon fa fa-eye"></span>7540</li>
+                                                </ul>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. 
+                                                    Aenean commodo ligula eget dolor. Aenean massa. Cumtipsu sociis natoque penatibus et magnis dis parturient montesti…</div>
+                                                    <a href="#" class="read-more">Read More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END News Block Four-->
+                             
+                        
+                        </div>
+                    </div>
+                    
+                    <!--Sidebar Side-->
+                       <!--Sidebar Side-->
+    <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                        <aside class="sidebar default-sidebar">
+                            <div class="sidebar-inner">
+
+                                 <!-- Search -->
+                                <div class="sidebar-widget search-box">
+                                    <form method="post" action="contact.html">
+                                        <div class="form-group">
+                                            <input type="search" name="search-field" value="" placeholder="Search" required>
+                                            <button type="submit"><span class="icon fa fa-search"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!--Adds Widget-->
+                                <div class="sidebar-widget sidebar-adds-widget">
+                                    <div class="adds-block" style="background-image:url(images/noid.jpg);">
+                                        <div class="inner-box">
+                                         <b style="color: white;">No ID No Service</b>
+                                        </div>
+                                        
+                                    </div> <br>
+                                   <p> Assist the driver and helper by showing the Daffodil Internatinal University ID card. Be cooperative with drivers, helpers and other passengers.</p>
+                                </div>
+                                <!--Ends Adds Widget-->
+                                
+                                <!--Social Widget-->
+                                <div class="sidebar-widget sidebar-social-widget">
+                                    <!--Sec Title-->
+                                    <div class="sec-title">
+                                        <h2>Follow Us</h2>
+                                    </div>
+                                    <ul class="social-icon-one alternate">
+                                    <li><a href="https://www.facebook.com/daffodilvarsity.edu.bd"><span></span><i class="fab fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="http://localhost/automated%20transport/home.html"><span></span><i class="fab fa-twitter"></i></a></li>
+                                        <li class="g_plus"><a href="https://www.instagram.com/daffodil.university/"><span></span> <i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!--End Social Widget-->
+                            
+                                
+                                <!--News Post Widget-->
+                                <div class="sidebar-widget posts-widget">
+                                    
+                                    <!--Product widget Tabs-->
+                                    <div class="product-widget-tabs">
+                                        <!--Product Tabs-->
+                                        <div class="prod-tabs tabs-box">
+                                        
+                                            <!--Tab Btns-->
+                                            <ul class="tab-btns tab-buttons clearfix">
+                                                <li data-tab="#prod-popular" class="tab-btn active-btn">Popular</li>
+                                                <li data-tab="#prod-recent" class="tab-btn">Recent</li>
+                                                <li data-tab="#prod-comment" class="tab-btn">Comments</li>
+                                            </ul>
+                                            
+                                            <!--Tabs Container-->
+                                            <div class="tabs-content">
+                                                
+                                                <!--Tab / Active Tab-->
+                                                <div class="tab active-tab" id="prod-popular">
+                                                    <div class="content">
+                                                        
+                                                        <article class="widget-post">
+                                                            <figure class="post-thumb"><a href="#"><img src="images/bonomaya.jpg" alt=""></a><div class="overlay"><span class="icon qb-play-arrow"></span></div></figure>
+                                                            <div class="text"><a href="#">Bonomaya at Daffodil International University</a></div>
+                                                            <div class="post-info">March 01, 2020</div>
+                                                        </article>
+                                                        
+                                                        <article class="widget-post">
+                                                            <figure class="post-thumb"><a href="#"><img src="images/know.jpg" alt=""></a><div class="overlay"><span class="icon qb-play-arrow"></span></div></figure>
+                                                            <div class="text"><a href="#">Knowledge Valley at Daffodil International University<</a></div>
+                                                            <div class="post-info">January 03, 2020</div>
+                                                        </article>
+                                                        
+                                                        <article class="widget-post">
+                                                            <figure class="post-thumb"><a href="#"><img src="images/ino.jpg" alt=""></a><div class="overlay"><span class="icon qb-play-arrow"></span></div></figure>
+                                                            <div class="text"><a href="#">The largest inovation lab in Private University of Bangladesh</a></div>
+                                                            <div class="post-info">January 03, 2020</div>
+                                                        </article>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <br>
+                                    
+                                    <!--Facebook Widget-->
+                                    <div class="sidebar-widget facebook-widget">
+                                        <div class="sec-title">
+                                            <h2>Facebook Page</h2>
+                                        </div>
+                                        <div class="widget-content">
+                                            <div class="image">
+                                                <a href="https://www.facebook.com/diutransport" target="_blank"><img src="images/buspage.jpg" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                        </aside>
+                       </div>                    
+                </div>
+            </div>
+        </div>
+        <!--End Sidebar Page Container-->
+               
+
+			<footer id="colophon" class="site-footer" style="background-color: black;" role="contentinfo" >
+				<div id="footer-sidebar" class="secondary">
+					<div id="footer-sidebar1" style="width:32%;margin-right:8%;">
+						<img style="max-width: 140px;display: block;margin-bottom: 12px;margin-left: -6px;" src="images/logo.png">
+						<div class="onlypc">
+							<p>About</p>
+							<p style="font-size: 1em;color: #fff;line-height: 1.5em;">						
+								Daffodil International University (DIU) is a recognized private university in ... DIU Transport Schedule ... Dhamrai bus station, Via Nabinagar, CMB, 7.45 am.
+							</p>
+						</div>
+					</div>
+						
+				<div id="footer-sidebar1">
+					<aside id="nav_menu-6" class="widget widget_nav_menu"><h3 class="widget-title">SECURITY AND BRAND</h3>
+						<div class="menu-sections-footer-menu-container">
+							<ul id="menu-sections-footer-menu" class="menu">
+								<li id="menu-item-119979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119979"><a href="https://daffodilvarsity.edu.bd/transport#"target="_blank">Privacy Statement</a></li>
+								<li id="menu-item-119981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119981"><a href="https://daffodilvarsity.edu.bd/article/copyright-issue"target="_blank">Report Copyright Infringement</a></li>
+								<li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="https://daffodilvarsity.edu.bd/article/security-issues"target="_blank">Report on Security Issues</a></li>
+								<li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="http://bd.daffodil.family/"target="_blank">DIU Branding</a></li>
+							</ul>
+						</div>
+					</aside>			
+				</div>
+
+
+				<div id="footer-sidebar2">
+					<aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">USEFUL LINKS</h3>
+						<div class="menu-footer-container">
+							<ul id="menu-footer" class="menu">
+								<li id="menu-item-29239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29239"><a href="http://blog.daffodilvarsity.edu.bd/"target="_blank">Blog</a></li>
+								<li id="menu-item-29233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29233"><a href="http://news.daffodilvarsity.edu.bd/"target="_blank">DIU News</a></li>
+								<li id="menu-item-113695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113695"><a href="http://diupress.com/"target="_blank">DIU Press</a></li>
+								<li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://newsletter-archive.daffodilvarsity.edu.bd/"target="_blank">Media Coverage</a></li>
+								<li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://it.daffodilvarsity.edu.bd/"target="_blank">DIU IT</a></li>
+								<li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://etender.daffodilvarsity.edu.bd/"target="_blank">eTender</a></li>
+								<li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://skill.jobs/"target="_blank">skill.jobs</a></li>
+							</ul>
+						</div>
+					</aside>			
+				</div>
+
+				<div id="footer-sidebar3">
+					<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">DOWNLOADS</h3>
+						<div class="menu-social-follow-footer-menu-container">
+							<ul id="menu-social-follow-footer-menu" class="menu"><li id="menu-item-119974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119974"><a href="http://newsletter.daffodilvarsity.edu.bd/"target="_blank">Newsletters</a></li>
+								<li id="menu-item-119975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119975"><a href="https://daffodilvarsity.edu.bd/images/download/DIU.wma">DIU Theme Song</a></li>
+								<li id="menu-item-119976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119976"><a href="https://daffodilvarsity.edu.bd/article/brochure"target="_blank">Brochure</a></li>
+								<li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/prospectus"target="_blank">Prospectus</a></li>
+								<li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/forms"target="_blank">Forms</a></li>
+								<li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/downloads"target="_blank">Brand Documents</a></li>
+								<li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/apps"target="_blank">Apps</a></li>
+							</ul>
+						</div>
+					<aside>
+				</div>
+				</div>
+							<div id="copyright"><p>Copyright © 2020 DIU. All rights reserved</p></div>
+					<style>
+					div#copyright{
+						display: inline-block;
+						width: 100%;
+						text-align: center;
+						font-size: 12px;
+						padding: 10px 4px 0 4px;
+						background: #111;
+						color: #fff;
+					}
+					</style>
+				</footer>
+
+				 <!-- Go Top BTN -->
+ 			 <button class="goTop fas fa-arrow-up"></button>
+
+	</<body>
+	
+</<html>
+	
+
+
+ 
+
