@@ -1,121 +1,393 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>DIU TRANSPORT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
+    <link rel="stylesheet" href="style/sup.css">
+    <link rel="stylesheet" href="style/co-sup.css">
+    <link rel="stylesheet" href="style/teams.css">
     <link href="style/bootstrap.css" rel="stylesheet">
-
     <link href="style/bus.css" rel="stylesheet">
-
     <link href="style/buyticket.css" rel="stylesheet">
-
     <link href="style/contact.css" rel="stylesheet">
-
     <link id="theme-color-file" href="style/footer.css" rel="stylesheet">
-
     <link href="style/main.css" rel="stylesheet">
-
     <link href="style/nav.css" rel="stylesheet">
-
     <link href="style/responsive.css" rel="stylesheet">
-
     <link href="style/user.css" rel="stylesheet">
-
     <link href="style/gallery.css" rel="stylesheet">
-    <style>
-.dropbtn {
-  padding: 16px;
-  font-size: 14px;
-  border: none;
-}
+    <link rel="stylesheet" href="style/most_post.css">
+    <link rel="stylesheet" href="style/drop.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/locate.css">
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;width: 100%;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-</style>
 </head>
+
 <body class="home page-template-default page page-id-122228 ">
-    
+
     <div class="mobile-fixed-toolbar">
-      <ul class="top-nav-mobile-left">
-          <li style="width:36%;"><a href="https://daffodilvarsity.edu.bds"target="_blank"><img style="width:120px;" src="images/logo.png" ></a></li>
-      </ul>
-      <ul class="top-nav-mobile">
-          <li><a href="#" id="pull" class="toggle-mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-      </ul>
+        <ul class="top-nav-mobile-left">
+            <li style="width:36%;">
+                <a href="https://daffodilvarsity.edu.bds" target="_blank"><img style="width:120px;" src="images/logo.png"></a>
+            </li>
+        </ul>
+        <ul class="top-nav-mobile">
+            <li><a href="#" id="pull" class="toggle-mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
     </div>
 
     <nav id="navigation" class="primary-navigation mobile-menu-wrapper" role="navigation">
-      <div id="nav-container">
-        <ul id="menu-header-menu" class="menu clearfix">
-          <li><a href="home.html" >Home</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="service.html">Service</a></li>
-          <li><a href="buyticket.html">Buy Ticket</a></li>
-          <li><div class="dropdown">
-              <a class="dropbtn" style="color: white;">Facilities</a>
-              <div class="dropdown-content">
-                <a href="maps.html">Locate Bus</a>
-                <a href="#">Facial Recognition</a>
-              </div>
-            </div></li>
-         <li><div class="dropdown">
-              <a class="dropbtn" style="color: white;">Info</a>
-              <div class="dropdown-content">
-                <a href="about.html">About</a>
-                <a href="trnasportinfo.html">Transport Info</a>
-                <a href="developers.html">Developers</a>
-              </div>
-            </div>
-            </li> 
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a>	</li>
-          <li><a href="user.html">Account</a></li>
-        </ul>		
+        <div id="nav-container">
+            <ul id="menu-header-menu" class="menu clearfix">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="buyticket.html">Buy Ticket</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" style="color: white;">Facilities</a>
+                        <div class="dropdown-content">
+                            <a href="locatebus.html">Locate Bus</a>
+                            <a href="#">Facial Recognition</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" style="color: white;">Info</a>
+                        <div class="dropdown-content">
+                            <a href="about.html">About</a>
+                            <a href="trnasportinfo.html">Transport Info</a>
+                            <a href="developers.html">Developers</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a> </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" style="color: white;"><i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="user_profile.html">Profile</a>
+                            <a href="ticket_list.html">Ticket List</a>
+                            <a href="ticket_list">Sign Out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-          
-        <div id="header-user-info-container" class="hidden-to-guest">
-          <span id="robi-header-logo">
-            <a href="#"> <img src="images/logo.png" ></a>
-          </span>
-        </div>		
-       
-      </div>
-    </nav>    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <div id="header-user-info-container" class="hidden-to-guest">
+                <span id="robi-header-logo">
+                    <a href="#"> <img src="images/logo.png"></a>
+                </span>
+            </div>
+
+        </div>
+    </nav>
+    <div style="width: 100%;height:50px ; background: rgb(6, 100, 121)">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <h2 style="color: rgba(255, 255, 255, 0);">DIU Transport Schedule</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        </div>
+                    </div>
+
+                    <h2 style="color: rgb(8, 43, 88);text-align: center;">DIU Transport Schedule</h2>
+
+                </div>
+                <table class="table table-bordered" style="font-size: 14px;">
+
+                    <tr style="background-color:#066479; ;color: rgb(252, 250, 250);">
+                        <th>From</th>
+                        <th>Time</th>
+                        <th>To</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">City Campus Route
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>City Campus</td>
+                        <td>7.15&nbsp; am</td>
+                        <td rowspan="4">Daffodil Internatinal University</td>
+                    </tr>
+
+                    <tr style="color: red;">
+                        <td>City Campus (Only Faculty &amp; Admin)</td>
+                        <td>9.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>City Campus</td>
+                        <td>10.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</td>
+                        <td>7.30 am</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Uttara Route</td>
+                    </tr>
+                    <tr>
+                        <td>MES Via Uttara, Khilkhet, Rajlokhi</td>
+                        <td>7:15 am</td>
+                        <td rowspan="3">Daffodil Internatinal University</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Uttara,&nbsp; Rajlokhi</td>
+                        <td>8.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>10.00 am</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Tongi College Gate Route
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Tongi College Gate</td>
+                        <td>7.15 am</td>
+                        <td rowspan="3">Daffodil Internatinal University</td>
+                    </tr>
+                    <tr>
+                        <td>9.00 am</td>
+                    </tr>
+                    <tr>
+                        <td>10.00 am</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Others Route</td>
+                    </tr>
+                    <tr>
+                        <td>Pukurpar Kashimpur, via Ashulia</td>
+                        <td>7.15 am</td>
+                        <td rowspan="4">Daffodil Internatinal University</td>
+                    </tr>
+                    <tr>
+                        <td>Savar, Via CMB</td>
+                        <td>7.50 am</td>
+                    </tr>
+                    <tr>
+                        <td>Dhamrai bus station, Via Nabinagar, CMB</td>
+                        <td>7.45 am</td>
+                    </tr>
+                    <tr>
+                        <td>Baipail bus station,&nbsp; Via Nabinagar, CMB</td>
+                        <td>7.45 am</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Daffodil Internatinal University Route</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">Daffodil International University</td>
+                        <td rowspan="6">2.00 pm</td>
+                        <td>City Campus</td>
+                    </tr>
+                    <tr>
+                        <td>UC, Rajlokhi, Khilkhet.</td>
+                    </tr>
+                    <tr>
+                        <td>CMB, Nabinagar</td>
+                    </tr>
+                    <tr>
+                        <td>Mirpur (Konabari)</td>
+                    </tr>
+                    <tr>
+                        <td>Tongi College Gate</td>
+                    </tr>
+                    <tr>
+                        <td>Ashulia via Pukurpar Kashimpur</td>
+                    </tr>
+                    <tr>
+                        <td style="color: red">Daffodil Internatinal University</td>
+                        <td style="color: red">4.00 Pm</td>
+                        <td style="color: red">CC (Only Faculty &amp; Admin)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">Daffodil Internatinal University</td>
+                        <td rowspan="7">5.30 pm</td>
+                        <td>City Campus</td>
+                    </tr>
+                    <tr>
+                        <td>Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</td>
+                    </tr>
+                    <tr>
+                        <td>Uttara, Rajlokhi, Khilkihet.</td>
+                    </tr>
+                    <tr>
+                        <td>Tongi College Gate</td>
+                    </tr>
+                    <tr>
+                        <td>Savar</td>
+                    </tr>
+                    <tr>
+                        <td>Dhamrai bus station</td>
+                    </tr>
+                    <tr>
+                        <td>Baipail bus station</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Daffodil Internatinal University</td>
+                        <td rowspan="3">9.00 pm</td>
+                        <td>City Campus</td>
+                    </tr>
+                    <tr>
+                        <td>Abdullapur.</td>
+                    </tr>
+                    <tr>
+                        <td>Radio Colony, via Nabinagar.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Friday</td>
+                    </tr>
+                    <tr>
+                        <td>City Campus</td>
+                        <td rowspan="3">7.30 am</td>
+                        <td rowspan="3">Daffodil Internatinal University</td>
+                    </tr>
+                    <tr>
+                        <td>Tongi College Gate via Uttara House Building</td>
+                    </tr>
+                    <tr>
+                        <td>Savar, via Nabinagar, CMB</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Daffodil Internatinal University</td>
+                        <td rowspan="3">6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td>Tongi College gate via Abdullapur</td>
+                    </tr>
+                    <tr>
+                        <td>CC</td>
+                    </tr>
+                    <tr>
+                        <td>Radio colony, via Nabinagar.</td>
+                    </tr>
+                </table>
+                <div class="row" style="color: tomato;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        * DIU = Daffodil Internatinal University.<br> * CC = City Campus, Dhanmondi.<br> * UC = Uttara Campus , Uttara.
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <footer id="colophon" class="site-footer" style="background-color: black;" role="contentinfo">
+        <div id="footer-sidebar" class="secondary">
+            <div id="footer-sidebar1" style="width:32%;margin-right:8%;">
+                <img style="max-width: 140px;display: block;margin-bottom: 12px;margin-left: -6px;" src="images/logo.png">
+                <div class="onlypc">
+                    <p>About</p>
+                    <p style="font-size: 1em;color: #fff;line-height: 1.5em;">
+                        Daffodil International University (DIU) is a recognized private university in ... DIU Transport Schedule ... Dhamrai bus station, Via Nabinagar, CMB, 7.45 am.
+                    </p>
+                </div>
+            </div>
+
+            <div id="footer-sidebar1">
+                <aside id="nav_menu-6" class="widget widget_nav_menu">
+                    <h3 class="widget-title">SECURITY AND BRAND</h3>
+                    <div class="menu-sections-footer-menu-container">
+                        <ul id="menu-sections-footer-menu" class="menu">
+                            <li id="menu-item-119979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119979"><a href="https://daffodilvarsity.edu.bd/transport#" target="_blank">Privacy
+									Statement</a></li>
+                            <li id="menu-item-119981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119981"><a href="https://daffodilvarsity.edu.bd/article/copyright-issue" target="_blank">Report
+									Copyright Infringement</a></li>
+                            <li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="https://daffodilvarsity.edu.bd/article/security-issues" target="_blank">Report
+									on Security Issues</a></li>
+                            <li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="http://bd.daffodil.family/" target="_blank">DIU Branding</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div id="footer-sidebar2">
+                <aside id="nav_menu-4" class="widget widget_nav_menu">
+                    <h3 class="widget-title">USEFUL LINKS</h3>
+                    <div class="menu-footer-container">
+                        <ul id="menu-footer" class="menu">
+                            <li id="menu-item-29239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29239"><a href="http://blog.daffodilvarsity.edu.bd/" target="_blank">Blog</a></li>
+                            <li id="menu-item-29233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29233"><a href="http://news.daffodilvarsity.edu.bd/" target="_blank">DIU News</a></li>
+                            <li id="menu-item-113695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113695"><a href="http://diupress.com/" target="_blank">DIU Press</a></li>
+                            <li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://newsletter-archive.daffodilvarsity.edu.bd/" target="_blank">Media
+									Coverage</a></li>
+                            <li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://it.daffodilvarsity.edu.bd/" target="_blank">DIU IT</a></li>
+                            <li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://etender.daffodilvarsity.edu.bd/" target="_blank">eTender</a></li>
+                            <li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://skill.jobs/" target="_blank">skill.jobs</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div id="footer-sidebar3">
+                <aside id="nav_menu-5" class="widget widget_nav_menu">
+                    <h3 class="widget-title">DOWNLOADS</h3>
+                    <div class="menu-social-follow-footer-menu-container">
+                        <ul id="menu-social-follow-footer-menu" class="menu">
+                            <li id="menu-item-119974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119974"><a href="http://newsletter.daffodilvarsity.edu.bd/" target="_blank">Newsletters</a>
+                            </li>
+                            <li id="menu-item-119975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119975"><a href="https://daffodilvarsity.edu.bd/images/download/DIU.wma">DIU Theme Song</a>
+                            </li>
+                            <li id="menu-item-119976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119976"><a href="https://daffodilvarsity.edu.bd/article/brochure" target="_blank">Brochure</a>
+                            </li>
+                            <li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/prospectus" target="_blank">Prospectus</a></li>
+                            <li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/forms" target="_blank">Forms</a></li>
+                            <li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/downloads" target="_blank">Brand
+									Documents</a></li>
+                            <li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/apps" target="_blank">Apps</a></li>
+                        </ul>
+                    </div>
+                    <aside>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright © 2020 DIU. All rights reserved</p>
+        </div>
+        <style>
+            div#copyright {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+                padding: 10px 4px 0 4px;
+                background: #111;
+                color: #fff;
+            }
+        </style>
+    </footer>
+
+    <!-- Go Top BTN -->
+    <button class="goTop fas fa-arrow-up"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    
-   
+
     <script src="js/main-slider-script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/appear.js"></script>
@@ -125,364 +397,8 @@
     <script src="js/scripts.js"></script>
     <script src="js/goto-btn.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/window.js"></script>
 
-  
-    <script>
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("navigation").style.background = "rgb(13, 165, 216)";
-        } else {
-            document.getElementById("navigation").style.background = "transparent";
-        }
-    }
+</body>
 
-    /*----------------------------------------------------
-    /* Responsive Navigation
-    /*--------------------------------------------------*/
-    jQuery(document).ready(function($){
-        $('.primary-navigation').not('.mobile-menu-wrapper').find('.menu').clone().appendTo('.mobile-menu-wrapper').hide();
-
-        $('.toggle-mobile-menu').click(function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $('body').toggleClass('mobile-menu-active');
-        });
-        
-        // prevent propagation of scroll event to parent
-        $(document).on('DOMMouseScroll mousewheel', '.mobile-menu-wrapper', function(ev) {
-            var $this = $(this),
-                scrollTop = this.scrollTop,
-                scrollHeight = this.scrollHeight,
-                height = $this.height(),
-                delta = (ev.type == 'DOMMouseScroll' ?
-                    ev.originalEvent.detail * -40 :
-                    ev.originalEvent.wheelDelta),
-                up = delta > 0;
-        
-            var prevent = function() {
-                ev.stopPropagation();
-                ev.preventDefault();
-                ev.returnValue = false;
-                return false;
-            }
-
-            if ( $('a#pull').css('display') !== 'none' ) { // if toggle menu button is visible ( small screens )
-        
-            if (!up && -delta > scrollHeight - height - scrollTop) {
-                // Scrolling down, but this will take us past the bottom.
-                $this.scrollTop(scrollHeight);
-                return prevent();
-            } else if (up && delta > scrollTop) {
-                // Scrolling up, but this will take us past the top.
-                $this.scrollTop(0);
-                return prevent();
-            }
-            }
-        });
-    }).on('click', function(event) {
-
-        var $target = jQuery(event.target);
-        if ( ( $target.hasClass("fa") && $target.parent().hasClass("toggle-caret") ) ||  $target.hasClass("toggle-caret") ) {// allow clicking on menu toggles
-            return;
-        }
-
-        jQuery('').removeClass('mobile-menu-active');
-    });
-
-  
- 
-    
-    </script>
-
-<div style="width: 100%;height:50px ; background: rgb(6, 100, 121)">
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="page">
-				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-						<h2 style="color: rgba(255, 255, 255, 0);">DIU Transport Schedule</h2>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					</div>
-				</div>
-
-				<h2 style="color: rgb(8, 43, 88);text-align: center;">DIU Transport Schedule</h2>
-
-			</div>
-			<table class="table table-bordered">
-
-				<tr style="background-color:#066479; ;color: rgb(252, 250, 250);">
-					<th>From</th>
-					<th>Time</th>
-					<th>To</th>
-				</tr>
-
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">City Campus Route
-					</td>
-				</tr>
-
-				<tr>
-					<td>City Campus</td>
-					<td>7.15&nbsp; am</td>
-					<td rowspan="4">Daffodil Internatinal University</td>
-				</tr>
-
-				<tr style="color: red;">
-					<td>City Campus (Only Faculty &amp; Admin)</td>
-					<td>9.00 am</td>
-				</tr>
-				<tr>
-					<td>City Campus</td>
-					<td>10.00 am</td>
-				</tr>
-				<tr>
-					<td>Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</td>
-					<td>7.30 am</td>
-				</tr>
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Uttara Route</td>
-				</tr>
-				<tr>
-					<td>MES Via Uttara, Khilkhet, Rajlokhi</td>
-					<td>7:15 am</td>
-					<td rowspan="3">Daffodil Internatinal University</td>
-				</tr>
-				<tr>
-					<td rowspan="2">Uttara,&nbsp; Rajlokhi</td>
-					<td>8.00 am</td>
-				</tr>
-				<tr>
-					<td>10.00 am</td>
-				</tr>
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Tongi College Gate
-						Route</td>
-				</tr>
-				<tr>
-					<td rowspan="3">Tongi College Gate</td>
-					<td>7.15 am</td>
-					<td rowspan="3">Daffodil Internatinal University</td>
-				</tr>
-				<tr>
-					<td>9.00 am</td>
-				</tr>
-				<tr>
-					<td>10.00 am</td>
-				</tr>
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Others Route</td>
-				</tr>
-				<tr>
-					<td>Pukurpar Kashimpur, via Ashulia</td>
-					<td>7.15 am</td>
-					<td rowspan="4">Daffodil Internatinal University</td>
-				</tr>
-				<tr>
-					<td>Savar, Via CMB</td>
-					<td>7.50 am</td>
-				</tr>
-				<tr>
-					<td>Dhamrai bus station, Via Nabinagar, CMB</td>
-					<td>7.45 am</td>
-				</tr>
-				<tr>
-					<td>Baipail bus station,&nbsp; Via Nabinagar, CMB</td>
-					<td>7.45 am</td>
-				</tr>
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Daffodil Internatinal
-						University Route</td>
-				</tr>
-				<tr>
-					<td rowspan="6">Daffodil International University</td>
-					<td rowspan="6">2.00 pm</td>
-					<td>City Campus</td>
-				</tr>
-				<tr>
-					<td>UC, Rajlokhi, Khilkhet.</td>
-				</tr>
-				<tr>
-					<td>CMB, Nabinagar</td>
-				</tr>
-				<tr>
-					<td>Mirpur (Konabari)</td>
-				</tr>
-				<tr>
-					<td>Tongi College Gate</td>
-				</tr>
-				<tr>
-					<td>Ashulia via Pukurpar Kashimpur</td>
-				</tr>
-				<tr>
-					<td style="color: red">Daffodil Internatinal University</td>
-					<td style="color: red">4.00 Pm</td>
-					<td style="color: red">CC (Only Faculty &amp; Admin)</td>
-				</tr>
-				<tr>
-					<td rowspan="7">Daffodil Internatinal University</td>
-					<td rowspan="7">5.30 pm</td>
-					<td>City Campus</td>
-				</tr>
-				<tr>
-					<td>Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</td>
-				</tr>
-				<tr>
-					<td>Uttara, Rajlokhi, Khilkihet.</td>
-				</tr>
-				<tr>
-					<td>Tongi College Gate</td>
-				</tr>
-				<tr>
-					<td>Savar</td>
-				</tr>
-				<tr>
-					<td>Dhamrai bus station</td>
-				</tr>
-				<tr>
-					<td>Baipail bus station</td>
-				</tr>
-				<tr>
-					<td rowspan="3">Daffodil Internatinal University</td>
-					<td rowspan="3">9.00 pm</td>
-					<td>City Campus</td>
-				</tr>
-				<tr>
-					<td>Abdullapur.</td>
-				</tr>
-				<tr>
-					<td>Radio Colony, via Nabinagar.</td>
-				</tr>
-				<tr>
-					<td colspan="3" style="background-color: #05243aa2;color: rgb(255, 249, 249);">Friday</td>
-				</tr>
-				<tr>
-					<td>City Campus</td>
-					<td rowspan="3">7.30 am</td>
-					<td rowspan="3">Daffodil Internatinal University</td>
-				</tr>
-				<tr>
-					<td>Tongi College Gate via Uttara House Building</td>
-				</tr>
-				<tr>
-					<td>Savar, via Nabinagar, CMB</td>
-				</tr>
-				<tr>
-					<td rowspan="3">Daffodil Internatinal University</td>
-					<td rowspan="3">6.00 pm
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					</td>
-					<td>Tongi College gate via Abdullapur</td>
-				</tr>
-				<tr>
-					<td>CC</td>
-				</tr>
-				<tr>
-					<td>Radio colony, via Nabinagar.</td>
-				</tr>
-			</table>
-			<div class="row" style="color: tomato;">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					* DIU = Daffodil Internatinal University.<br>
-					* CC = City Campus, Dhanmondi.<br>
-					* UC = Uttara Campus , Uttara.
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-				</div>
-			</div>
-			<p>&nbsp;</p>
-
-		</div>
-	</div>
-</div>
-
-</div>
-</div>
-
-
-			<footer id="colophon" class="site-footer" style="background-color: black;" role="contentinfo" >
-				<div id="footer-sidebar" class="secondary">
-					<div id="footer-sidebar1" style="width:32%;margin-right:8%;">
-						<img style="max-width: 140px;display: block;margin-bottom: 12px;margin-left: -6px;" src="images/logo.png">
-						<div class="onlypc">
-							<p>About</p>
-							<p style="font-size: 1em;color: #fff;line-height: 1.5em;">						
-								Daffodil International University (DIU) is a recognized private university in ... DIU Transport Schedule ... Dhamrai bus station, Via Nabinagar, CMB, 7.45 am.
-							</p>
-						</div>
-					</div>
-						
-				<div id="footer-sidebar1">
-					<aside id="nav_menu-6" class="widget widget_nav_menu"><h3 class="widget-title">SECURITY AND BRAND</h3>
-						<div class="menu-sections-footer-menu-container">
-							<ul id="menu-sections-footer-menu" class="menu">
-								<li id="menu-item-119979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119979"><a href="https://daffodilvarsity.edu.bd/transport#"target="_blank">Privacy Statement</a></li>
-								<li id="menu-item-119981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119981"><a href="https://daffodilvarsity.edu.bd/article/copyright-issue"target="_blank">Report Copyright Infringement</a></li>
-								<li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="https://daffodilvarsity.edu.bd/article/security-issues"target="_blank">Report on Security Issues</a></li>
-								<li id="menu-item-122251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122251"><a href="http://bd.daffodil.family/"target="_blank">DIU Branding</a></li>
-							</ul>
-						</div>
-					</aside>			
-				</div>
-
-
-				<div id="footer-sidebar2">
-					<aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">USEFUL LINKS</h3>
-						<div class="menu-footer-container">
-							<ul id="menu-footer" class="menu">
-								<li id="menu-item-29239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29239"><a href="http://blog.daffodilvarsity.edu.bd/"target="_blank">Blog</a></li>
-								<li id="menu-item-29233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29233"><a href="http://news.daffodilvarsity.edu.bd/"target="_blank">DIU News</a></li>
-								<li id="menu-item-113695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113695"><a href="http://diupress.com/"target="_blank">DIU Press</a></li>
-								<li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://newsletter-archive.daffodilvarsity.edu.bd/"target="_blank">Media Coverage</a></li>
-								<li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://it.daffodilvarsity.edu.bd/"target="_blank">DIU IT</a></li>
-								<li id="menu-item-121952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121952"><a href="http://etender.daffodilvarsity.edu.bd/"target="_blank">eTender</a></li>
-								<li id="menu-item-111890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111890"><a href="http://skill.jobs/"target="_blank">skill.jobs</a></li>
-							</ul>
-						</div>
-					</aside>			
-				</div>
-
-				<div id="footer-sidebar3">
-					<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">DOWNLOADS</h3>
-						<div class="menu-social-follow-footer-menu-container">
-							<ul id="menu-social-follow-footer-menu" class="menu"><li id="menu-item-119974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119974"><a href="http://newsletter.daffodilvarsity.edu.bd/"target="_blank">Newsletters</a></li>
-								<li id="menu-item-119975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119975"><a href="https://daffodilvarsity.edu.bd/images/download/DIU.wma">DIU Theme Song</a></li>
-								<li id="menu-item-119976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119976"><a href="https://daffodilvarsity.edu.bd/article/brochure"target="_blank">Brochure</a></li>
-								<li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/prospectus"target="_blank">Prospectus</a></li>
-								<li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/forms"target="_blank">Forms</a></li>
-								<li id="menu-item-119977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119977"><a href="https://daffodilvarsity.edu.bd/article/downloads"target="_blank">Brand Documents</a></li>
-								<li id="menu-item-119978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119978"><a href="https://daffodilvarsity.edu.bd/article/apps"target="_blank">Apps</a></li>
-							</ul>
-						</div>
-					<aside>
-				</div>
-				</div>
-							<div id="copyright"><p>Copyright © 2020 DIU. All rights reserved</p></div>
-					<style>
-					div#copyright{
-						display: inline-block;
-						width: 100%;
-						text-align: center;
-						font-size: 12px;
-						padding: 10px 4px 0 4px;
-						background: #111;
-						color: #fff;
-					}
-					</style>
-				</footer>
-
-				 <!-- Go Top BTN -->
- 			 <button class="goTop fas fa-arrow-up"></button>
-
-	</<body>
-	
-</<html>
-	
-
-
+</html>

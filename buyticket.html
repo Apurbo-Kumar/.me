@@ -6,68 +6,29 @@
     <title>DIU TRANSPORT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-
+    <link rel="stylesheet" href="style/sup.css">
+    <link rel="stylesheet" href="style/co-sup.css">
+    <link rel="stylesheet" href="style/teams.css">
     <link href="style/bootstrap.css" rel="stylesheet">
-
     <link href="style/bus.css" rel="stylesheet">
-
     <link href="style/buyticket.css" rel="stylesheet">
-
     <link href="style/contact.css" rel="stylesheet">
-
     <link id="theme-color-file" href="style/footer.css" rel="stylesheet">
-
     <link href="style/main.css" rel="stylesheet">
-
     <link href="style/nav.css" rel="stylesheet">
-
     <link href="style/responsive.css" rel="stylesheet">
-
     <link href="style/user.css" rel="stylesheet">
-
     <link href="style/gallery.css" rel="stylesheet">
-    <style>
-        .dropbtn {
-            padding: 16px;
-            font-size: 14px;
-            border: none;
-        }
-        
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            width: 100%;
-        }
-        
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style/most_post.css">
+    <link rel="stylesheet" href="style/drop.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/locate.css">
+
 </head>
 
 <body class="home page-template-default page page-id-122228 ">
@@ -94,7 +55,7 @@
                     <div class="dropdown">
                         <a class="dropbtn" style="color: white;">Facilities</a>
                         <div class="dropdown-content">
-                            <a href="maps.html">Locate Bus</a>
+                            <a href="locatebus.html">Locate Bus</a>
                             <a href="#">Facial Recognition</a>
                         </div>
                     </div>
@@ -112,101 +73,26 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a> </li>
-                <li><a href="user.html">Account</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" style="color: white;"><i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="user_profile.html">Profile</a>
+                            <a href="ticket_list.html">Ticket List</a>
+                            <a href="ticket_list">Sign Out</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-
 
             <div id="header-user-info-container" class="hidden-to-guest">
                 <span id="robi-header-logo">
-            <a href="#"> <img src="images/logo.png" ></a>
-          </span>
+                    <a href="#"> <img src="images/logo.png"></a>
+                </span>
             </div>
 
         </div>
     </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-
-    <script src="js/main-slider-script.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/color-settings.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/goto-btn.js"></script>
-    <script src="js/gallery.js"></script>
-
-
-    <script>
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("navigation").style.background = "rgb(13, 165, 216)";
-            } else {
-                document.getElementById("navigation").style.background = "transparent";
-            }
-        }
-
-        /*----------------------------------------------------
-        /* Responsive Navigation
-        /*--------------------------------------------------*/
-        jQuery(document).ready(function($) {
-            $('.primary-navigation').not('.mobile-menu-wrapper').find('.menu').clone().appendTo('.mobile-menu-wrapper').hide();
-
-            $('.toggle-mobile-menu').click(function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $('body').toggleClass('mobile-menu-active');
-            });
-
-            // prevent propagation of scroll event to parent
-            $(document).on('DOMMouseScroll mousewheel', '.mobile-menu-wrapper', function(ev) {
-                var $this = $(this),
-                    scrollTop = this.scrollTop,
-                    scrollHeight = this.scrollHeight,
-                    height = $this.height(),
-                    delta = (ev.type == 'DOMMouseScroll' ?
-                        ev.originalEvent.detail * -40 :
-                        ev.originalEvent.wheelDelta),
-                    up = delta > 0;
-
-                var prevent = function() {
-                    ev.stopPropagation();
-                    ev.preventDefault();
-                    ev.returnValue = false;
-                    return false;
-                }
-
-                if ($('a#pull').css('display') !== 'none') { // if toggle menu button is visible ( small screens )
-
-                    if (!up && -delta > scrollHeight - height - scrollTop) {
-                        // Scrolling down, but this will take us past the bottom.
-                        $this.scrollTop(scrollHeight);
-                        return prevent();
-                    } else if (up && delta > scrollTop) {
-                        // Scrolling up, but this will take us past the top.
-                        $this.scrollTop(0);
-                        return prevent();
-                    }
-                }
-            });
-        }).on('click', function(event) {
-
-            var $target = jQuery(event.target);
-            if (($target.hasClass("fa") && $target.parent().hasClass("toggle-caret")) || $target.hasClass("toggle-caret")) { // allow clicking on menu toggles
-                return;
-            }
-
-            jQuery('').removeClass('mobile-menu-active');
-        });
-    </script>
-
-
 
 
     <div style="width: 100%;height:50px ; background: rgb(6, 100, 121)">
@@ -347,6 +233,7 @@
                         </div>
                     </div>
                 </div> <br> <br>
+                <!--Sidebar-->
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                     <aside class="sidebar default-sidebar">
@@ -381,92 +268,205 @@
                                     <h2>Follow Us</h2>
                                 </div>
                                 <ul class="social-icon-one alternate">
-                                    <li><a href="https://www.facebook.com/daffodilvarsity.edu.bd"><span></span><i class="fab fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="http://localhost/automated%20transport/home.html"><span></span><i class="fab fa-twitter"></i></a></li>
-                                    <li class="g_plus"><a href="https://www.instagram.com/daffodil.university/"><span></span> <i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/daffodilvarsity.edu.bd"><span></span><i
+                                                class="fab fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="http://localhost/automated%20transport/home.html"><span></span><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li class="g_plus"><a href="https://www.instagram.com/daffodil.university/"><span></span> <i
+                                                class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                             <!--End Social Widget-->
 
 
-                            <!--News Post Widget-->
-                            <div class="sidebar-widget posts-widget">
 
-                                <!--Product widget Tabs-->
-                                <div class="product-widget-tabs">
-                                    <!--Product Tabs-->
-                                    <div class="prod-tabs tabs-box">
+                            <!-- Mostrecent head -->
 
-                                        <!--Tab Btns-->
-                                        <ul class="tab-btns tab-buttons clearfix">
-                                            <li data-tab="#prod-popular" class="tab-btn active-btn">Popular</li>
-                                            <li data-tab="#prod-recent" class="tab-btn">Recent</li>
-                                            <li data-tab="#prod-comment" class="tab-btn">Comments</li>
-                                        </ul>
+                            <div class="mostrecent">
 
-                                        <!--Tabs Container-->
-                                        <div class="tabs-content">
+                                <!-- Sidebar Block Head Start -->
+                                <div class="head education-head">
 
-                                            <!--Tab / Active Tab-->
-                                            <div class="tab active-tab" id="prod-popular">
-                                                <div class="content">
+                                    <!-- Tab List -->
+                                    <div class="sidebar-tab-list education-sidebar-tab-list nav">
+                                        <a class="active" data-toggle="tab" href="#latest-news" style="list-style: none;">Latest News</a>
+                                        <a data-toggle="tab" href="#popular-news">Popular News</a>
+                                    </div>
 
-                                                    <article class="widget-post">
-                                                        <figure class="post-thumb">
-                                                            <a href="#"><img src="images/bonomaya.jpg" alt=""></a>
-                                                            <div class="overlay"><span class="icon qb-play-arrow"></span></div>
-                                                        </figure>
-                                                        <div class="text"><a href="#">Bonomaya at Daffodil International University</a></div>
-                                                        <div class="post-info">March 01, 2020</div>
-                                                    </article>
+                                </div>
+                                <!-- Sidebar Block Head End -->
 
-                                                    <article class="widget-post">
-                                                        <figure class="post-thumb">
-                                                            <a href="#"><img src="images/know.jpg" alt=""></a>
-                                                            <div class="overlay"><span class="icon qb-play-arrow"></span></div>
-                                                        </figure>
-                                                        <div class="text"><a href="#">Knowledge Valley at Daffodil International University<</a></div>
-                                                        <div class="post-info">January 03, 2020</div>
-                                                    </article>
+                                <!-- Sidebar Block Body Start -->
+                                <div class="body">
 
-                                                    <article class="widget-post">
-                                                        <figure class="post-thumb">
-                                                            <a href="#"><img src="images/ino.jpg" alt=""></a>
-                                                            <div class="overlay"><span class="icon qb-play-arrow"></span></div>
-                                                        </figure>
-                                                        <div class="text"><a href="#">The largest inovation lab in Private University of Bangladesh</a></div>
-                                                        <div class="post-info">January 03, 2020</div>
-                                                    </article>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="latest-news">
 
+                                            <!-- Small Post Start -->
+                                            <div class="post post-small post-list education-post post-separator-border">
+                                                <div class="postwrap">
+
+                                                    <!-- Image -->
+                                                    <a class="image" href="post-details.html"><img src="images/bonomaya.jpg" alt="post"></a>
+
+                                                    <!-- Content -->
+                                                    <div class="content">
+
+                                                        <!-- Title -->
+                                                        <h5>
+                                                            <a href="post-details.html">Bonomaya at Daffodil International
+                                                                University</a>
+                                                        </h5>
+
+                                                        <!-- Meta -->
+                                                        <div class="meta fix">
+                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <!-- Small Post End -->
+
+                                            <!-- Small Post Start -->
+                                            <div class="post post-small post-list education-post post-separator-border">
+                                                <div class="postwrap">
+
+                                                    <!-- Image -->
+                                                    <a class="image" href="post-details.html"><img src="images/know.jpg" alt="post"></a>
+
+                                                    <!-- Content -->
+                                                    <div class="content">
+
+                                                        <!-- Title -->
+                                                        <h5>
+                                                            <a href="post-details.html">Knowledge Valley at Daffodil
+                                                                International University</a>
+                                                        </h5>
+
+                                                        <!-- Meta -->
+                                                        <div class="meta fix">
+                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Small Post End -->
+
+                                            <!-- Small Post Start -->
+                                            <div class="post post-small post-list education-post post-separator-border">
+                                                <div class="postwrap">
+
+                                                    <!-- Image -->
+                                                    <a class="image" href="post-details.html"><img src="images/ino.jpg" alt="post"></a>
+
+                                                    <!-- Content -->
+                                                    <div class="content">
+
+                                                        <!-- Title -->
+                                                        <h5>
+                                                            <a href="post-details.html">The largest inovation lab in Private
+                                                                University of Bangladesh</a>
+                                                        </h5>
+
+                                                        <!-- Meta -->
+                                                        <div class="meta fix">
+                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Small Post End -->
 
 
                                         </div>
+                                        <div class="tab-pane fade" id="popular-news">
 
-                                    </div>
+                                            <!-- Small Post Start -->
+                                            <div class="post post-small post-list education-post post-separator-border">
+                                                <div class="postwrap">
 
-                                </div>
-                                <br>
+                                                    <!-- Image -->
+                                                    <a class="image" href="post-details.html"><img src="images/bonomaya.jpg" alt="post"></a>
 
-                                <!--Facebook Widget-->
-                                <div class="sidebar-widget facebook-widget">
-                                    <div class="sec-title">
-                                        <h2>Facebook Page</h2>
-                                    </div>
-                                    <div class="widget-content">
-                                        <div class="image">
-                                            <a href="https://www.facebook.com/diutransport" target="_blank"><img src="images/buspage.jpg" /></a>
+                                                    <!-- Content -->
+                                                    <div class="content">
+
+                                                        <!-- Title -->
+                                                        <h5>
+                                                            <a href="post-details.html">Bonomaya at Daffodil International
+                                                                University</a>
+                                                        </h5>
+
+                                                        <!-- Meta -->
+                                                        <div class="meta fix">
+                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Small Post End -->
+
+                                            <!-- Small Post Start -->
+                                            <div class="post post-small post-list education-post post-separator-border">
+                                                <div class="postwrap">
+
+                                                    <!-- Image -->
+                                                    <a class="image" href="post-details.html"><img src="images/know.jpg" alt="post"></a>
+
+                                                    <!-- Content -->
+                                                    <div class="content">
+
+                                                        <!-- Title -->
+                                                        <h5>
+                                                            <a href="post-details.html">Knowledge Valley at Daffodil
+                                                                International University</a>
+                                                        </h5>
+
+                                                        <!-- Meta -->
+                                                        <div class="meta fix">
+                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Small Post End -->
+
                                         </div>
                                     </div>
+
                                 </div>
+                                <!-- Sidebar Block Body End -->
 
                             </div>
+
+                            <!-- Sidebar End -->
+                        </div>&nbsp;
+                        <!--Social Widget-->
+                        <!--Facebook Widget-->
+                        <div class="sidebar-widget facebook-widget">
+                            <div class="sec-title">
+                                <h2>Facebook Page</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="image">
+                                    <a href="https://www.facebook.com/diutransport" target="_blank"><img src="images/buspage.jpg" /></a>
+                                </div>
+                            </div>
                         </div>
-                    </aside>
+                        <!--End Social Widget-->
                 </div>
+
             </div>
         </div>
+        </aside>
+    </div>
+    </div>
+    </div>
     </div>
     <!--End Sidebar Page Container-->
 
@@ -552,6 +552,20 @@
     <!-- Go Top BTN -->
     <button class="goTop fas fa-arrow-up"></button>
 
-    </<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-    </<html>
+    <script src="js/main-slider-script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/color-settings.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/goto-btn.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/window.js"></script>
+
+</body>
+
+</html>
