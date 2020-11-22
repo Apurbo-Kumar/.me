@@ -205,7 +205,6 @@ input{
 }
 button{
     width: 20%;
-    background: linear-gradient(to right, #0edfff 0%, #09f8c8 80%);
     color: #fff;
     text-align: center;
     text-decoration: none;
