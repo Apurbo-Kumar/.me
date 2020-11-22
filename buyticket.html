@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <link rel="stylesheet" href="style/sup.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+
+    <link type="text/css" rel="stylesheet" href="style/bokcss.css" />
+
     <link rel="stylesheet" href="style/co-sup.css">
-    <link rel="stylesheet" href="style/teams.css">
+
     <link href="style/bootstrap.css" rel="stylesheet">
     <link href="style/bus.css" rel="stylesheet">
     <link href="style/buyticket.css" rel="stylesheet">
@@ -94,383 +100,67 @@
         </div>
     </nav>
 
-
     <div style="width: 100%;height:50px ; background: rgb(6, 100, 121)">
     </div>
-    <!--Sidebar Page Container-->
-    <div class="sidebar-page-container" style="margin-top: -70px">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!--Content Side-->
-                <div class="content-side col-lg-8 col-md-12 col-sm-12">
-
-                    <!--Marquee-->
-
-                    <div class="sec-news">
-                        <marquee> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </marquee>
-                    </div>
-                    <div class="letest-title">
-                        <p>Letest News</p>
-                    </div>
-
-                    <!--Marquee End-->
 
 
-                    <div class="button-row">
-
-                        <div class="row2">
-                            <a href="destinationcost.html" class="bus1">Show Cost</a>
-                        </div> &nbsp;
-
-                    </div>
-                    <br>
-                    <div class="content-blocks">
-
-                        <!--News Block Four-->
-                        <div class="news-block-four">
-                            <div class="inner-box">
-                                <div class="row clearfix">
-                                    <div class="image-column  col-sm-12">
-
-                                        <form name="bussearch" id="bussearch" onsubmit="return validateBusForm(this)">
-                                            <ul class="list-inline">
-                                                <div class="form-group hide" style="font-size:28px;color:#000;"></div>
-
-                                                <div class="form-group">
-                                                    <label for="dest_from">From</label>
-                                                    <select type="text" class="datepicker form-control" required>
-                                                                        <option value=""></option>
-                                                                        <option value="">Daffodil International University</option>
-                                                                        <option value="">City Campus (via Shymoli, Dhanmondi)</option> 
-                                                                        <option value="">Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</option> 
-                                                                        <option value="">Uttora Campus, Rajlokhi, Khilkhet</option> 
-                                                                        <option value="">Tongi College Gate</option> 
-                                                                        <option value="">Abdullapur</option> 
-                                                                        <option value="">Pukurpar Kashimpur, via Ashulia</option> 
-                                                                        <option value="">Savar</option> 
-                                                                        <option value="">Dhamrai bus station</option> 
-                                                                        <option value="">Baipail bus station</option> 
-                                                                        <option value="">Nabinagar</option>
-                                                                        <option value="">Radio Colony, via Nabinagar</option> 
-                                                        </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="dest_to">To</label>
-                                                    <select type="text" class="datepicker form-control" required>
-                                                    <option value=""></option>
-                                                                        <option value="">Daffodil International University</option>
-                                                                        <option value="">City Campus (via Shymoli, Dhanmondi)</option> 
-                                                                        <option value="">Mirpur- (via prosikha more, purnima, sony, Mirpur-1)</option> 
-                                                                        <option value="">Uttora Campus, Rajlokhi, Khilkhet</option> 
-                                                                        <option value="">Tongi College Gate</option> 
-                                                                        <option value="">Abdullapur</option> 
-                                                                        <option value="">Pukurpar Kashimpur, via Ashulia</option> 
-                                                                        <option value="">Savar</option> 
-                                                                        <option value="">Dhamrai bus station</option> 
-                                                                        <option value="">Baipail bus station</option> 
-                                                                        <option value="">Nabinagar</option>
-                                                                        <option value="">Radio Colony, via Nabinagar</option> 
-                                                        </select>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-
-                                                            <div class="form-group">
-                                                                <label for="doj">Seat</span></label>
-                                                                <input type="number" class="datepicker form-control" placeholder="0" value="" required>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="doj">Cost</span></label>
-                                                                <input type="cost" class="datepicker form-control" placeholder="25 tk" required>
-                                                            </div>
-                                                            <label for="doj">Date of Journey</label>
-                                                            <input type="date" class="datepicker form-control" data-date-format="dd/mm/yyyy" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="doj">Time</span></label>
-                                                            <input type="time" class="datepicker form-control" value="" required>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="col-md-6">
-
-                                                        <div class="form-group">
-                                                            <label for="doj">ID</span></label>
-                                                            <input type="text" class="datepicker form-control" placeholder="171-15-2019" value="" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="doj">Name</span></label>
-                                                            <input type="text" class="datepicker form-control" placeholder="Username" value="" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="doj">Email</span></label>
-                                                            <input type="Email" class="datepicker form-control" placeholder="abc.cse@diu.edu.bd" value="" required>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="doj">Number</span></label>
-                                                            <input type="phone" class="datepicker form-control" placeholder="+880" value="" required>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="button">
-                                                    <button class="datepicker form-control"><a href="userpayment.html">Submit</a></button>
-                                                </div>
-                                            </ul>
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </div>
+    <div id="booking" class="boksection">
+        <div class="boksection-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>DIU Online Bus Ticket Booking</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere, soluta magnam consectetur molestias itaque ad sint fugit architecto incidunt iste culpa perspiciatis possimus voluptates aliquid consequuntur cumque quasi.
+                                Perspiciatis.
+                            </p>
                         </div>
                     </div>
-                </div> <br> <br>
-                <!--Sidebar-->
-                <!--Sidebar Side-->
-                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                    <aside class="sidebar default-sidebar">
-                        <div class="sidebar-inner">
-
-                            <!-- Search -->
-                            <div class="sidebar-widget search-box">
-                                <form method="post" action="contact.html">
-                                    <div class="form-group">
-                                        <input type="search" name="search-field" value="" placeholder="Search" required>
-                                        <button type="submit"><span class="icon fa fa-search"></span></button>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!--Adds Widget-->
-                            <div class="sidebar-widget sidebar-adds-widget">
-                                <div class="adds-block" style="background-image:url(images/noid.jpg);">
-                                    <div class="inner-box">
-                                        <b style="color: white;">No ID No Service</b>
-                                    </div>
-
-                                </div> <br>
-                                <p> Assist the driver and helper by showing the Daffodil Internatinal University ID card. Be cooperative with drivers, helpers and other passengers.</p>
-                            </div>
-                            <!--Ends Adds Widget-->
-
-                            <!--Social Widget-->
-                            <div class="sidebar-widget sidebar-social-widget">
-                                <!--Sec Title-->
-                                <div class="sec-title">
-                                    <h2>Follow Us</h2>
+                    <div class="col-md-4 col-md-pull-7">
+                        <div class="booking-form">
+                            <form>
+                                <div class="bokform-group">
+                                    <span class="bokform-label">From Route</span>
+                                    <select class="form-control" required>
+                                            <option value="">Select Route</option>
+                                            <option value="">Daffodil International University</option>
+                                            <option value="">City Campus Rote</option>
+                                            <option value="">Mirpur Route</option>
+                                            <option value="">Uttara Route</option>
+                                            <option value="">Tongi College Gate Route</option>
+                                            <option value="">Others Route</option>
+                                        </select>
+                                    <span class="bokselect-arrow"></span>
                                 </div>
-                                <ul class="social-icon-one alternate">
-                                    <li><a href="https://www.facebook.com/daffodilvarsity.edu.bd"><span></span><i
-                                                class="fab fa-facebook"></i></a></li>
-                                    <li class="twitter"><a href="http://localhost/automated%20transport/home.html"><span></span><i
-                                                class="fab fa-twitter"></i></a></li>
-                                    <li class="g_plus"><a href="https://www.instagram.com/daffodil.university/"><span></span> <i
-                                                class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <!--End Social Widget-->
-
-
-
-                            <!-- Mostrecent head -->
-
-                            <div class="mostrecent">
-
-                                <!-- Sidebar Block Head Start -->
-                                <div class="head education-head">
-
-                                    <!-- Tab List -->
-                                    <div class="sidebar-tab-list education-sidebar-tab-list nav">
-                                        <a class="active" data-toggle="tab" href="#latest-news" style="list-style: none;">Latest News</a>
-                                        <a data-toggle="tab" href="#popular-news">Popular News</a>
-                                    </div>
-
+                                <div class="bokform-group">
+                                    <span class="bokform-label">To Rute</span>
+                                    <select class="form-control" required>
+                                            <option value="">Select Route</option>
+                                            <option value="">Daffodil International University</option>
+                                            <option value="">City Campus Rote</option>
+                                            <option value="">Mirpur Route</option>
+                                            <option value="">Uttara Route</option>
+                                            <option value="">Tongi College Gate Route</option>
+                                            <option value="">Others Route</option>
+                                        </select>
+                                    <span class="bokselect-arrow"></span>
                                 </div>
-                                <!-- Sidebar Block Head End -->
-
-                                <!-- Sidebar Block Body Start -->
-                                <div class="body">
-
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="latest-news">
-
-                                            <!-- Small Post Start -->
-                                            <div class="post post-small post-list education-post post-separator-border">
-                                                <div class="postwrap">
-
-                                                    <!-- Image -->
-                                                    <a class="image" href="post-details.html"><img src="images/bonomaya.jpg" alt="post"></a>
-
-                                                    <!-- Content -->
-                                                    <div class="content">
-
-                                                        <!-- Title -->
-                                                        <h5>
-                                                            <a href="post-details.html">Bonomaya at Daffodil International
-                                                                University</a>
-                                                        </h5>
-
-                                                        <!-- Meta -->
-                                                        <div class="meta fix">
-                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Small Post End -->
-
-                                            <!-- Small Post Start -->
-                                            <div class="post post-small post-list education-post post-separator-border">
-                                                <div class="postwrap">
-
-                                                    <!-- Image -->
-                                                    <a class="image" href="post-details.html"><img src="images/know.jpg" alt="post"></a>
-
-                                                    <!-- Content -->
-                                                    <div class="content">
-
-                                                        <!-- Title -->
-                                                        <h5>
-                                                            <a href="post-details.html">Knowledge Valley at Daffodil
-                                                                International University</a>
-                                                        </h5>
-
-                                                        <!-- Meta -->
-                                                        <div class="meta fix">
-                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Small Post End -->
-
-                                            <!-- Small Post Start -->
-                                            <div class="post post-small post-list education-post post-separator-border">
-                                                <div class="postwrap">
-
-                                                    <!-- Image -->
-                                                    <a class="image" href="post-details.html"><img src="images/ino.jpg" alt="post"></a>
-
-                                                    <!-- Content -->
-                                                    <div class="content">
-
-                                                        <!-- Title -->
-                                                        <h5>
-                                                            <a href="post-details.html">The largest inovation lab in Private
-                                                                University of Bangladesh</a>
-                                                        </h5>
-
-                                                        <!-- Meta -->
-                                                        <div class="meta fix">
-                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Small Post End -->
-
-
-                                        </div>
-                                        <div class="tab-pane fade" id="popular-news">
-
-                                            <!-- Small Post Start -->
-                                            <div class="post post-small post-list education-post post-separator-border">
-                                                <div class="postwrap">
-
-                                                    <!-- Image -->
-                                                    <a class="image" href="post-details.html"><img src="images/bonomaya.jpg" alt="post"></a>
-
-                                                    <!-- Content -->
-                                                    <div class="content">
-
-                                                        <!-- Title -->
-                                                        <h5>
-                                                            <a href="post-details.html">Bonomaya at Daffodil International
-                                                                University</a>
-                                                        </h5>
-
-                                                        <!-- Meta -->
-                                                        <div class="meta fix">
-                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Small Post End -->
-
-                                            <!-- Small Post Start -->
-                                            <div class="post post-small post-list education-post post-separator-border">
-                                                <div class="postwrap">
-
-                                                    <!-- Image -->
-                                                    <a class="image" href="post-details.html"><img src="images/know.jpg" alt="post"></a>
-
-                                                    <!-- Content -->
-                                                    <div class="content">
-
-                                                        <!-- Title -->
-                                                        <h5>
-                                                            <a href="post-details.html">Knowledge Valley at Daffodil
-                                                                International University</a>
-                                                        </h5>
-
-                                                        <!-- Meta -->
-                                                        <div class="meta fix">
-                                                            <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2017</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Small Post End -->
-
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="bokform-group">
+                                            <span class="bokform-label">Date</span>
+                                            <input class="form-control" style="width: 160px;" type="date" required>
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- Sidebar Block Body End -->
-
-                            </div>
-
-                            <!-- Sidebar End -->
-                        </div>&nbsp;
-                        <!--Social Widget-->
-                        <!--Facebook Widget-->
-                        <div class="sidebar-widget facebook-widget">
-                            <div class="sec-title">
-                                <h2>Facebook Page</h2>
-                            </div>
-                            <div class="widget-content">
-                                <div class="image">
-                                    <a href="https://www.facebook.com/diutransport" target="_blank"><img src="images/buspage.jpg" /></a>
-                                </div>
-                            </div>
+                                <button class="bokbtn">Check availability </button>
+                            </form>
                         </div>
-                        <!--End Social Widget-->
+                    </div>
                 </div>
-
             </div>
         </div>
-        </aside>
     </div>
-    </div>
-    </div>
-    </div>
-    <!--End Sidebar Page Container-->
-
-
 
     <footer id="colophon" class="site-footer" style="background-color: black;" role="contentinfo">
         <div id="footer-sidebar" class="secondary">
