@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <link rel="stylesheet" href="style/sup.css">
     <link rel="stylesheet" href="style/co-sup.css">
@@ -27,7 +28,8 @@
     <link rel="stylesheet" href="style/most_post.css">
     <link rel="stylesheet" href="style/drop.css">
     <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/locate.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -50,7 +52,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="service.html">Service</a></li>
-                <li><a href="buyticket.html">Buy Ticket</a></li>
+                <li><a href="online-ticket.html">Online Ticket</a></li>
                 <li>
                     <div class="dropdown">
                         <a class="dropbtn" style="color: white;">Facilities</a>
@@ -126,9 +128,46 @@
                         <p class="pro-type">Department of CSE</p>
                         <p class="pro-type">Email : apurbox-19xx@diu.edu.bd</p>
                         <p class="pro-type">Daffodil International University</p>
+
+                        <button name="signup-btn" id="cookies" class="btnxa">Edit Profile</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="modalx cookies">
+            <form action="">
+                <i class="fas fa-times close"></i>
+                <img src="icons/profile.jpg" class="img" alt="Cookies">
+                <input type="file" name="user-name" class="picz" required>
+                <h2 style="font-size:20px ;">Edit Profile</h2>
+                <div class="login-input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="image" value="Apurbo Roy" required />
+                </div>
+                <div class="login-input-field">
+                    <i class="fas fa-id-card"></i>
+                    <input type="id" name="user-id" value="171-15-XXX" required />
+                </div>
+                <div class="login-input-field">
+                    <i class="fas fa-graduation-cap"></i>
+                    <input type="department" name="user-dept" value="CSE" required />
+                </div>
+                <div class="login-input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="phone" name="user-phonel" value="+8801732XXXX" required />
+                </div>
+                <div class="login-input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="user-email" value="abc15-101@diu.edu.bd" required />
+                </div>
+                <div class="login-input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="user-pass" value="Password" required />
+                </div>
+                <button name="signup-btn" class="btnxa">Confirm</button>
+
+
+            </form>
         </div>
     </body>
 
@@ -221,7 +260,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
+    <script src="js/modal.js">
+    </script>
     <script src="js/main-slider-script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/appear.js"></script>
