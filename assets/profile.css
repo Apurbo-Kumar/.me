@@ -136,12 +136,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.bio-row {
-    width: 50%;
-    float: left;
-    margin-bottom: 10px;
-    padding:0 15px;
-}
+
 
 .bio-row p span {
     width: 100px;
@@ -204,10 +199,7 @@ body {
 .file-pos {
     margin: 6px 0 10px 0;
 }
-.panel-body:hover{
-    background-color: #f9fdff;
-    color: #112947;
-}
+
 .profile-activity h5 {
     font-weight: 300;
     margin-top: 0;
@@ -404,3 +396,29 @@ ul.summary-list > li:last-child  {
     margin-right: 0px;
 }
 
+  /* Media Queries */
+  @media(max-width: 968px){
+    .bio-row{
+        display: none;
+    }
+    .bio-roa{
+    margin-bottom: 10px;
+    float: left;
+    padding:0 15px;
+    }
+    .bio-roa{
+        color: #000 !important;
+        margin-left: 5px !important;
+    }
+  }
+
+  .bio-row {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px;
+}
+.bio-roa{
+    color: rgb(255, 255, 255);
+    margin-left: -5px;
+}
